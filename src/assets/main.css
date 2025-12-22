@@ -73,7 +73,10 @@ html {
 }
 
 :root {
-  --manrope: "Manrope", serif;
+  --color-black: #282739;
+  --color-grey600: #5D6C7B;
+  --color-accent: #FBC100;
+  --color-white: #FFFFFF;
 }
 
 input:focus,
@@ -123,12 +126,16 @@ body.lock{
 }
 
 .container {
-  max-width: 1385px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
 }
 
+
+section{
+  padding: 40px 0;
+}
 
 .swiper-banner .swiper-pagination .swiper-pagination-bullet{
     background-color: #FFFFFF;
@@ -145,7 +152,7 @@ body.lock{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-52%, -48%);
+    transform: translate(-50%, -50%);
     display: block;
     width: calc(100% + 3px);
     height: calc(100% + 2.5px);
