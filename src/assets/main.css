@@ -1,0 +1,156 @@
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 400; 
+    font-style: normal;  
+    src: url('font/Mulish-Regular.ttf') format('truetype'),
+}  
+
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 700; 
+    font-style: normal;  
+    src: url('font/Mulish-Bold.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 500;
+    font-style: normal;  
+    src: url('font/Mulish-Medium.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 600; 
+    font-style: normal;  
+    src: url('font/Mulish-Semibold.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 900;
+    font-style: normal;  
+    src: url('font/Mulish-Black.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 800; 
+    font-style: normal;  
+    src: url('font/Mulish-Heavy.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 300; 
+    font-style: normal;  
+    src: url('font/Mulish-Light.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 100; 
+    font-style: normal;  
+    src: url('font/Mulish-Thin.ttf') format('truetype'),
+}  
+
+@font-face {  
+    font-family: 'Mulish'; 
+    font-weight: 200; 
+    font-style: normal;  
+    src: url('font/Mulish-Ultralight.ttf') format('truetype'),
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  --manrope: "Manrope", serif;
+}
+
+input:focus,
+input:focus-visible,
+button:focus,
+button:focus-visible{
+    outline: unset;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: "Mulish", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body.lock{
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1385px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+
+.swiper-banner .swiper-pagination .swiper-pagination-bullet{
+    background-color: #FFFFFF;
+    opacity: 1;
+    position: relative;
+}
+
+.swiper-banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #000000;
+}
+
+.swiper-banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -48%);
+    display: block;
+    width: calc(100% + 3px);
+    height: calc(100% + 2.5px);
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid #000000;
+}
+
