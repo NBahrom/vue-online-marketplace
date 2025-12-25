@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "apple",
+        "img": "/images/brands/apple.png"
+    },
+    {
+        "id": 2,
+        "name": "samsung",
+        "img": "/images/brands/samsung.png"
+    },
+    {
+        "id": 3,
+        "name": "mi",
+        "img": "/images/brands/mi.png"
+    },
+    {
+        "id": 4,
+        "name": "asus",
+        "img": "/images/brands/asus.png"
+    },
+    {
+        "id": 5,
+        "name": "sony",
+        "img": "/images/brands/sony.png"
+    },
+    {
+        "id": 6,
+        "name": "sony2",
+        "img": "/images/brands/sony.png"
+    },
+    {
+        "id": 7,
+        "name": "sony3",
+        "img": "/images/brands/sony.png"
+    }
+]
