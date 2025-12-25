@@ -47,6 +47,7 @@ defineProps<ProductItemProps>()
     max-width: 255px;
     width: 100%;
     display: block;
+    min-height: 295px;
 }
 
 .product-img{

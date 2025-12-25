@@ -4,6 +4,7 @@
     <CategoriesShowCaseVue />
     <BestSellers />
     <Brands />
+    <NewProducts />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import CategoriesShowCaseVue from '../components/CategoriesShowCase/CategoriesSh
 import Banner from '../components/Banner/Banner.vue';
 import BestSellers from '../components/BestSellers/BestSellers.vue';
 import Brands from '@/components/Brands/Brands.vue';
+import NewProducts from '@/components/NewProducts/NewProducts.vue';
 
 export default {
   name: 'HomeView',
@@ -19,7 +21,8 @@ export default {
     CategoriesShowCaseVue,
     Banner,
     BestSellers,
-    Brands
+    Brands,
+    NewProducts
   }
 };
 

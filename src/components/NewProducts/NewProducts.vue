@@ -5,6 +5,13 @@
                 <h2>Лидеры продаж</h2>
 
                 <div class="best-seller-items">
+                    <div class="category">
+                        <ProductsCategoryBlock 
+                             :imgSrc="HeadphonesImg"
+                             categoryName="Наушники"
+                             link="/category/phones"
+                        />
+                    </div>
                     
                     <Swiper
                         :slides-per-view="'auto'"
@@ -14,10 +21,10 @@
                         <SwiperSlide>
                             <ProductsItem 
                                 :id="1"
-                                :link="'/products/1'"
+                                :link="'/products/2'"
                                 :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
+                                productName="Sony MDR-ZX310"
+                                category="Наушники"
                                 :price="3800000"
                                 :newLabel="true"
                                 :showFullInfo="false"
@@ -28,8 +35,8 @@
                                 :id="2"
                                 :link="'/products/2'"
                                 :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
+                                productName="Sony MDR-ZX310"
+                                category="Наушники"
                                 :price="3800000"
                                 :newLabel="true"
                                 :showFullInfo="false"
@@ -40,8 +47,8 @@
                                 :id="3"
                                 :link="'/products/3'"
                                 :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
+                                productName="Sony MDR-ZX310"
+                                category="Наушники"
                                 :price="3800000"
                                 :newLabel="true"
                                 :showFullInfo="false"
@@ -52,22 +59,14 @@
                                 :id="4"
                                 :link="'/products/4'"
                                 :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
+                                productName="Sony MDR-ZX310"
+                                category="Наушники"
                                 :price="3800000"
                                 :newLabel="true"
                                 :showFullInfo="false"
                             />
                         </SwiperSlide>
                     </Swiper>
-
-                    <div class="category">
-                        <ProductsCategoryBlock 
-                             :imgSrc="PhonesImg"
-                             categoryName="Смартфоны"
-                             link="/category/phones"
-                        />
-                    </div>
                 </div>
             </div>
         </div>
@@ -77,8 +76,8 @@
 <script setup lang="ts">
 import ProductsItem from '../Products/ProductsItem.vue';
 import ProductsCategoryBlock from '../Products/ProductsCategoryBlock.vue';
-import ProductImg from '../../assets/images/products/product1.png';
-import PhonesImg from '../../assets/images/products/phones.png'
+import ProductImg from '../../assets/images/products/headphone.png';
+import HeadphonesImg from '../../assets/images/headphones.png'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 
@@ -101,6 +100,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 .best-seller-items{
     position: relative;
     display: flex;
+    gap: 15px;
 }
 
 </style>

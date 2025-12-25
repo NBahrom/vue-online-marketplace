@@ -35,7 +35,7 @@
 <style scoped>
 .products-category{
     width: 341px;
-    height: 310px;
+    height: 100%;
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
