@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Catalog",
+        "list": [
+            { "text": "Ноутбук", "link": "/laptop/" },
+            { "text": "Телефон", "link": "/phone/" },
+            { "text": "Кондиционер", "link": "/phone/" },
+            { "text": "Пылесос", "link": "/phone/" },
+            { "text": "Телевизор", "link": "/phone/" },
+            { "text": "Наушники", "link": "/phone/" },
+            { "text": "Новинки", "link": "/phone/" },
+            { "text": "Акции", "link": "/phone/" }
+        ]
+    },
+    {
+        "name": "Rub",
+        "list": [
+            { "text": "Доставка", "link": "/laptop/" },
+            { "text": "Оплата", "link": "/phone/" },
+            { "text": "Гарантия", "link": "/phone/" },
+            { "text": "Новости", "link": "/phone/" },
+            { "text": "Журнал", "link": "/phone/" },
+            { "text": "О магазине", "link": "/phone/" },
+            { "text": "Контактная информация", "link": "/phone/" }
+        ]
+    },
+    {
+        "name": "Info",
+        "list": [
+            { "text": "Пользовательское соглашение об использовании персональных данных", "link": "/laptop/" },
+            { "text": "Политика конфиденциальности", "link": "/phone/" },
+            { "text": "Соглашение на рассылку рекламных материалов", "link": "/phone/" },
+            { "text": "Политика возвратов", "link": "/phone/" }
+        ]
+    }
+]

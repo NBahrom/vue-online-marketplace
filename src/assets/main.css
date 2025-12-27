@@ -74,10 +74,12 @@ html {
 
 :root {
   --color-black: #282739;
+  --color-dark: #000000;
   --color-grey600: #5D6C7B;
   --color-grey: #F1F1F1;
   --color-accent: #FBC100;
   --color-white: #FFFFFF;
+  --color-light-blue: #737E9B;
 }
 
 input:focus,
