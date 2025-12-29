@@ -55,7 +55,6 @@
 .banner{
     width: 100%;
     height: 400px;
-    margin-top: 192px;
     position: relative;
     background-color: #F2F2F2;
 }
