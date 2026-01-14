@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "image": "/images/phone.png",
+        "name": "Xiaomi Mi 11 Lite 6/128 GB",
+        "category": "Телефон",
+        "price": 3800000
+    },
+        {
+        "id": 1,
+        "image": "/images/phone.png",
+        "name": "Xiaomi Mi 11 Lite 6/128 GB 1",
+        "category": "Телефон",
+        "price": 3800000
+    },
+        {
+        "id": 2,
+        "image": "/images/phone.png",
+        "name": "Xiaomi Mi 11 Lite 6/128 GB 2",
+        "category": "Телефон",
+        "price": 3800000
+    },
+        {
+        "id": 3,
+        "image": "/images/phone.png",
+        "name": "Xiaomi Mi 11 Lite 6/128 GB 3",
+        "category": "Телефон",
+        "price": 3800000
+    }
+]

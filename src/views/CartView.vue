@@ -4,12 +4,16 @@
     <div class="container">
       <h1 class="title">Моя корзина</h1>
       <span>{{ !cartProducts ? 0 : cartProducts }} товара</span>
+
+      <ProductsList />
+
     </div>
   </main>
 </template>
 
 <script setup>
-  import PathShower from '@/components/PathShower.vue';
+  import ProductsList from '@/components/Cart/ProductsList.vue';
+  import PathShower from '@/components/ui/PathShower.vue';
   import { computed } from 'vue';
   import {useStore} from 'vuex'
 

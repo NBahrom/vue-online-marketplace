@@ -81,7 +81,6 @@ import HeadphonesImg from '../../assets/images/headphones.png'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 
-
 </script>
 
 <style scoped>

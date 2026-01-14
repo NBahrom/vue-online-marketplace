@@ -1,5 +1,5 @@
 <template>
-    <a :href="link" class="product-item">
+    <div @click="addToCart" class="product-item">
         <div class="product-img">
             <img :src="imgSrc" :alt="productName">
         </div>
@@ -26,16 +26,34 @@
         <div class="compare-button" v-if="showFullInfo">
             <button><CompareIcon /></button>
         </div>
-    </a>
+    </div>
 </template>
 
 <script setup lang="ts">
 import type { ProductItemProps } from '@/types/ProductItem.props'
+import type { CartProduct } from '@/store/modules/cart/types';
 import CartIcon from '../icons/CartIcon.vue'
 import WishlistIcon from '../icons/WishlistIcon.vue';
 import CompareIcon from '../icons/CompareIcon.vue';
+import { useStore } from 'vuex';
 
-defineProps<ProductItemProps>()
+
+const props = defineProps<ProductItemProps>()
+
+const store = useStore();
+
+function addToCart() {
+  const cartProduct: CartProduct = {
+    id: props.id,
+    name: props.productName,
+    price: props.price ?? 0,
+    image: props.imgSrc,
+    quantity: 1,
+  }
+
+  store.dispatch('cart/addToCart', cartProduct)
+}
+
 </script>
 
 <style scoped>

@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
     import type { PathArr } from '@/types/Path.props'
-    import HomeIcon from './icons/HomeIcon.vue';
+    import HomeIcon from '@/components/icons/HomeIcon.vue';
 
     defineProps<PathArr>()
 

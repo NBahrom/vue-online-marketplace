@@ -11,54 +11,19 @@
                         space-between="18"
                         class="swiper-products"    
                     >
-                        <SwiperSlide>
+                        <SwiperSlide v-for="product in products">
                             <ProductsItem 
-                                :id="1"
-                                :link="'/products/1'"
-                                :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
-                                :price="3800000"
+                                :id="product.id"
+                                :link="`/products/${product.id}`"
+                                :imgSrc="product.image"
+                                :productName="product.name"
+                                :category="product.category"
+                                :price="product.price"
                                 :newLabel="true"
                                 :showFullInfo="false"
                             />
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <ProductsItem 
-                                :id="2"
-                                :link="'/products/2'"
-                                :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
-                                :price="3800000"
-                                :newLabel="true"
-                                :showFullInfo="false"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <ProductsItem 
-                                :id="3"
-                                :link="'/products/3'"
-                                :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
-                                :price="3800000"
-                                :newLabel="true"
-                                :showFullInfo="false"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <ProductsItem 
-                                :id="4"
-                                :link="'/products/4'"
-                                :imgSrc="ProductImg"
-                                productName="Xiaomi Mi 11 Lite 6/128 GB"
-                                category="Смартфоны"
-                                :price="3800000"
-                                :newLabel="true"
-                                :showFullInfo="false"
-                            />
-                        </SwiperSlide>
+
                     </Swiper>
 
                     <div class="category">
@@ -80,7 +45,7 @@ import ProductsCategoryBlock from '../Products/ProductsCategoryBlock.vue';
 import ProductImg from '../../assets/images/products/product1.png';
 import PhonesImg from '../../assets/images/products/phones.png'
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
+import products from "@/data/products.json"
 
 
 </script>
